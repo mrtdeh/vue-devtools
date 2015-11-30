@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "cd shells/dev && webpack-dev-server --inline --hot",
     "dev-chrome": "cd shells/chrome && webpack --watch --hide-modules",
+    "dev-firefox": "cd shells/firefox && webpack --watch --hide-modules",
     "lint": "eslint src --ext=js,vue && eslint shells/chrome/src && eslint shells/dev/src",
     "build": "npm run lint && cd shells/chrome && NODE_ENV=production webpack --progress --hide-modules && npm run zip",
     "zip": "zip -r chrome.zip shells/chrome"
